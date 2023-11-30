@@ -26,5 +26,21 @@ public class _02_Output {
         System.out.printf("%+06.2f%n", Math.PI); //항상 기호 표시
 
 
+        System.out.println("---------문자열-------");
+        System.out.printf("%s%n", "Java"); //Java
+        System.out.printf("%6s%n", "Java");// __Java
+        System.out.printf("%-6s%n", "Java");// Java__
+        System.out.printf("%6.2s%n", "Java");// ____Ja (.2를 붙이면 앞에서 두 글자만)
+        System.out.printf("%-6.2s%n", "Java");// Ja____ (.2를 붙이면 앞에서 두 글자만 + 좌측)
+
+
+        System.out.println("------------응용---------------");
+        System.out.println("이름      영어   수학   평균"); //공백이 6, 3, 3칸
+        System.out.printf("%-6s %4d %4d %6.1f %n", "강백호", 90, 80, 85.0);
+        System.out.printf("%-6s %4d %4d %6.1f %n", "서태웅", 100, 100, 100.0);
+        System.out.printf("%-6s %4d %4d %6.1f %n", "채치수", 95, 100, 97.5);
+
+
+
     }
 }
